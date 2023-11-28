@@ -1,0 +1,88 @@
+#Rule Base for AND Operation:
+
+If Input1 is Very High (VH) and Input2 is Remote (U), then the Result is Very High (VH).
+If Input1 is Very High (VH) and Input2 is Unlikely (R), then the Result is High (H).
+If Input1 is Very High (VH) and Input2 is Very Low (VL), then the Result is High (H).
+If Input1 is Very High (VH) and Input2 is Low (L), then the Result is High (H).
+If Input1 is Very High (VH) and Input2 is Moderate (M), then the Result is High (H).
+If Input1 is Very High (VH) and Input2 is High (H), then the Result is High (H).
+
+If Input1 is High (H) and Input2 is Remote (U), then the Result is High (H).
+If Input1 is High (H) and Input2 is Unlikely (R), then the Result is High (H).
+If Input1 is High (H) and Input2 is Very Low (VL), then the Result is Moderate (M).
+If Input1 is High (H) and Input2 is Low (L), then the Result is Moderate (M).
+If Input1 is High (H) and Input2 is Moderate (M), then the Result is Low (L).
+
+If Input1 is Moderate (M) and Input2 is Remote (U), then the Result is High (H).
+If Input1 is Moderate (M) and Input2 is Unlikely (R), then the Result is Moderate (M).
+If Input1 is Moderate (M) and Input2 is Very Low (VL), then the Result is Moderate (M).
+If Input1 is Moderate (M) and Input2 is Low (L), then the Result is Very Low (VL).
+If Input1 is Moderate (M) and Input2 is Moderate (M), then the Result is Very Low (VL).
+
+If Input1 is Low (L) and Input2 is Remote (U), then the Result is Moderate (M).
+If Input1 is Low (L) and Input2 is Unlikely (R), then the Result is Moderate (M).
+If Input1 is Low (L) and Input2 is Very Low (VL), then the Result is Very Low (VL).
+If Input1 is Low (L) and Input2 is Low (L), then the Result is Very Low (VL).
+If Input1 is Low (L) and Input2 is Moderate (M), then the Result is Low (L).
+
+If Input1 is Very Low (VL) and Input2 is Remote (U), then the Result is Very Low (VL).
+If Input1 is Very Low (VL) and Input2 is Unlikely (R), then the Result is Very Low (VL).
+If Input1 is Very Low (VL) and Input2 is Very Low (VL), then the Result is Very Low (VL).
+If Input1 is Very Low (VL) and Input2 is Low (L), then the Result is Very Low (VL).
+If Input1 is Very Low (VL) and Input2 is Moderate (M), then the Result is Low (L).
+
+If Input1 is Unlikely (R) and Input2 is Remote (U), then the Result is Very Low (VL).
+If Input1 is Unlikely (R) and Input2 is Unlikely (R), then the Result is Remote (U).
+If Input1 is Unlikely (R) and Input2 is Very Low (VL), then the Result is Remote (U).
+If Input1 is Unlikely (R) and Input2 is Low (L), then the Result is Remote (U).
+If Input1 is Unlikely (R) and Input2 is Moderate (M), then the Result is Remote (U).
+
+If Input1 is Remote (U) and Input2 is Remote (U), then the Result is Remote (U).
+If Input1 is Remote (U) and Input2 is Unlikely (R), then the Result is Remote (U).
+If Input1 is Remote (U) and Input2 is Very Low (VL), then the Result is Remote (U).
+If Input1 is Remote (U) and Input2 is Low (L), then the Result is Remote (U).
+If Input1 is Remote (U) and Input2 is Moderate (M), then the Result is Remote (U)
+
+#Rule Base for OR Operation:
+
+If Input1 is Very High (VH) or Input2 is Very High (VH), then the Result is Very High (VH).
+If Input1 is Very High (VH) or Input2 is High (H), then the Result is Very High (VH).
+If Input1 is Very High (VH) or Input2 is Moderate (M), then the Result is Very High (VH).
+If Input1 is Very High (VH) or Input2 is Low (L), then the Result is Very High (VH).
+If Input1 is Very High (VH) or Input2 is Very Low (VL), then the Result is Very High (VH).
+If Input1 is Very High (VH) or Input2 is Remote (U), then the Result is Very High (VH).
+
+If Input1 is High (H) or Input2 is Very High (VH), then the Result is Very High (VH).
+If Input1 is High (H) or Input2 is High (H), then the Result is High (H).
+If Input1 is High (H) or Input2 is Moderate (M), then the Result is High (H).
+If Input1 is High (H) or Input2 is Low (L), then the Result is High (H).
+If Input1 is High (H) or Input2 is Very Low (VL), then the Result is High (H).
+If Input1 is High (H) or Input2 is Remote (U), then the Result is High (H).
+
+If Input1 is Moderate (M) or Input2 is Very High (VH), then the Result is Very High (VH).
+If Input1 is Moderate (M) or Input2 is High (H), then the Result is High (H).
+If Input1 is Moderate (M) or Input2 is Moderate (M), then the Result is Moderate (M).
+If Input1 is Moderate (M) or Input2 is Low (L), then the Result is Moderate (M).
+If Input1 is Moderate (M) or Input2 is Very Low (VL), then the Result is Moderate (M).
+If Input1 is Moderate (M) or Input2 is Remote (U), then the Result is Moderate (M).
+
+If Input1 is Low (L) or Input2 is Very High (VH), then the Result is Very High (VH).
+If Input1 is Low (L) or Input2 is High (H), then the Result is High (H).
+If Input1 is Low (L) or Input2 is Moderate (M), then the Result is Moderate (M).
+If Input1 is Low (L) or Input2 is Low (L), then the Result is Low (L).
+If Input1 is Low (L) or Input2 is Very Low (VL), then the Result is Low (L).
+If Input1 is Low (L) or Input2 is Remote (U), then the Result is Low (L).
+
+If Input1 is Very Low (VL) or Input2 is Very High (VH), then the Result is Very High (VH).
+If Input1 is Very Low (VL) or Input2 is High (H), then the Result is High (H).
+If Input1 is Very Low (VL) or Input2 is Moderate (M), then the Result is Moderate (M).
+If Input1 is Very Low (VL) or Input2 is Low (L), then the Result is Low (L)
+If Input1 is Very Low (VL) or Input2 is Very Low (VL), then the Result is Very Low (VL).
+If Input1 is Very Low (VL) or Input2 is Remote (U), then the Result is Very Low (VL).
+
+If Input1 is Remote (U) or Input2 is Very High (VH), then the Result is Very High (VH).
+If Input1 is Remote (U) or Input2 is High (H), then the Result is High (H).
+If Input1 is Remote (U) or Input2 is Moderate (M), then the Result is Moderate (M).
+If Input1 is Remote (U) or Input2 is Low (L), then the Result is Low (L).
+If Input1 is Remote (U) or Input2 is Very Low (VL), then the Result is Low (L).
+If Input1 is Remote (U) or Input2 is Remote (U), then the Result is Remote (U).
